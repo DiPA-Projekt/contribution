@@ -30,13 +30,18 @@ drei Komponenten unterteilt:
 - Server (Backend), Java Spring Boot
 
 ### API-Design mit OpenAPI
+
 Sobald eine Client-Server-Kommunikation für ein Module von DiPA erforderlich wird, sollte gemäß der Architektur mit dem API-Design
 in einem separaten API-Modul begonnen werden.
-Hierzu ist es lediglich notwendig die YAML-Dateien entsprechend der OpenAPI-Spezifikation und dem fachlichen Kontekt zu definieren.
+Hierzu ist es lediglich notwendig die YAML-Dateien entsprechend der OpenAPI-Spezifikation ohne einschränkende Validierungsregeln im
+Zusammenhang mit dem fachlichen Kontekt zu definieren.
+
 Sobald ein Release des API-Design erstellt wurde, wird sowohl ein NPM- als auch ein Maven-Paket im GitHub-Packages (z.B.
-[Hub-API(https://github.com/orgs/DiPA-Projekt/packages?repo_name=hub-openapi)]) zur Wiederverwendung bereitgestellt.
+[Hub-API(https://github.com/orgs/DiPA-Projekt/packages?repo_name=hub-openapi)]) zur Wiederverwendung bereitgestellt. Anschließend
+kann das Client- und Server-Modul die entsprechende API-Modul als Abhängigkeit einbinden und ausimplementieren.
 
 ### Client als SPA/PWA
+
 Der DiPA-Client ist in TypeScript und unter zur Zuhilfenahme eines SPA-Frameworks geschrieben. Zum Entwickeln wird der Tool-Stack der generischen CLI
 [@leanup/cli](https://www.npmjs.com/package/@leanup/cli) verwendet. Sie ermöglicht das gleichartige Entwickeln mit den etablierten Tools unter einer
 einheitlichen Referenzarchitektur unabhängig vom Framework selbst. Darüber hinaus definiert die Referenzarchitektur, wie mit welchem Anwendungscodeteilen
@@ -45,3 +50,5 @@ fokusiertes Entwickeln gefördert werden.
 
 
 ### Server mit Spring Boot
+
+Der dem DiPA-Server ist eine Java Spring Boot Anwendung und implementiert u.a. die API, Validierung und Businesslogik der Backend-Seite.
