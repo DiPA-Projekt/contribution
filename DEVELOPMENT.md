@@ -52,3 +52,7 @@ fokusiertes Entwickeln gefördert werden.
 ### Server mit Spring Boot
 
 Der dem DiPA-Server ist eine Java Spring Boot Anwendung und implementiert u.a. die API, Validierung und Businesslogik der Backend-Seite.
+
+## Entwicklung
+
+Die Einrichtung oder Konfiguration der jeweiligen DiPA-Module ist immer der im Repository liegenden README.md zu entnehmen und auch dort zu dokumenieren.
