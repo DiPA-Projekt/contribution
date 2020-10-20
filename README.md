@@ -4,8 +4,8 @@
 
 ## Code of Conduct
 
-Von allen Mitwirkende ist es wichtig, dass Sie sich an die [Vereinbarung über Verhaltenskodex](./CODE_OF_CONDUCT.md) halten.
+Wir wollen ein tolles Projekt vorantreiben und dabei anständig miteinander umgehen. Daher bitten wir alle Mitwirkenden, sich an die [Vereinbarung über Verhaltenskodex](./CODE_OF_CONDUCT.md) zu halten.
 
-## Architektur und Entwicklung
+## Beiträge 
 
-Nähere Informationen zur [Architektur und Entwicklung](./DEVELOPMENT.md) können hier nachgelesen werden.
+Beiträge von Nicht-Teammitgliedern sind willkommen. Aus Sicherheitsgründen bitten wir Euch, Änderungen und Verbesserungen per Fork einzubringen.
